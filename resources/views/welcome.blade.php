@@ -3,6 +3,6 @@
 
 @section('content')
 
-<h1>{{$texto}}</h1>
+<h1>{{$texto}} teste de Texto</h1>
 
 @endsection
