@@ -1,8 +1,8 @@
 @extends('layouts.main')
-@section("title",'Home')
+@section("title",'Dashboard')
 
 @section('content')
 
-<h1>{{$texto}} teste de Texto</h1>
+<h1>{{$texto}}</h1>
 
 @endsection

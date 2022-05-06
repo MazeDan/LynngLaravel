@@ -30,10 +30,18 @@
             </a>
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
             </ul>
-            <div class="text-end">
-              <a href="login.php" class="btn btn-outline-light me-2">Login</a>
-              <a href="login/index.php" class="btn btn-warning me-2">Cadastrar</a>
-            </div>
+              @auth
+                <div class="text-end">
+                  <a href="dashboard/" class="btn btn-outline-light me-2">Dashboard</a>
+                  <a href="login/" class="btn btn-warning me-2">Fechar</a>
+                </div>
+              @endauth
+              @guest
+                <div class="text-end">
+                  <a href="login/" class="btn btn-outline-light me-2">Login</a>
+                  <a href="register/" class="btn btn-warning me-2">Cadastrar</a>
+                </div>
+              @endguest
           </div>
         </div>
       </header>
